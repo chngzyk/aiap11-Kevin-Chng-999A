@@ -15,5 +15,5 @@ jobs:
         run: bash ./run.sh
       - name: Assessment 2 Reminder
         run: |
-          echo "Reminder to add `AISG-AIAP`as collaborator!"
+          echo "Reminder to add AISG-AIAP as collaborator!"
           echo "Once your submission is complete, fill up the form provided in the Assessment 2 document"
