@@ -33,3 +33,5 @@ class DataProcessing:
 
         self.df.dropna(inplace=True)
 
+        return self.df
+

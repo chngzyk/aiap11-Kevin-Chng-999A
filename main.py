@@ -1,6 +1,7 @@
 import logging
 
 from src.data_processing import DataProcessing
+from src.model import Model
 
 
 def main():
@@ -11,7 +12,10 @@ def main():
     logger.info("Running machine learning pipeline")
 
     data_processor = DataProcessing()
-    data_processor.clean_data()
+    clean_data = data_processor.clean_data()
+
+    modeling = Model(clean_data)
+    modeling.build_model()
 
 
 if __name__ == "__main__":
